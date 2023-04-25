@@ -8,19 +8,29 @@ public class App {
         Worker worker = new Worker();
         Drone drone = new Drone();
 
-        output(queen.doYourJob());
-        output(queen.fly());
-
-        output(worker.doYourJob());
-        output(worker.fly());
-
-        output(drone.doYourJob());
-        output(drone.fly());
-        
+        pollObject(queen);
+        pollObject(worker);
+        pollObject(drone);
         
     }
 
-   
+    // Variante 1 . Overloading - überladene Methoden //
+    private static void pollObject(Queen obj) {
+        output(obj.doYourJob());
+        output(obj.fly());
+   }
+
+    private static void pollObject(Worker obj) {
+        output(obj.doYourJob());
+        output(obj.fly());
+}
+
+    private static void pollObject(Drone obj) {
+        output(obj.doYourJob());
+        output(obj.fly());
+}
+
+
    
     private static void output(String outputStr) {
         System.out.println(outputStr);
