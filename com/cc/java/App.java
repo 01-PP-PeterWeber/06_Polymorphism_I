@@ -14,27 +14,16 @@ public class App {
         
     }
 
-    // Variante 1 . Overloading - überladene Methoden //
-    private static void pollObject(Queen obj) {
+    // Variante 2 . Polymorphie //
+    private static void pollObject(HoneyBee obj) {
         output(obj.doYourJob());
         output(obj.fly());
-   }
-
-    private static void pollObject(Worker obj) {
-        output(obj.doYourJob());
-        output(obj.fly());
-}
-
-    private static void pollObject(Drone obj) {
-        output(obj.doYourJob());
-        output(obj.fly());
-}
-
+    }
 
    
     private static void output(String outputStr) {
         System.out.println(outputStr);
-    }
+}
 
 
 
