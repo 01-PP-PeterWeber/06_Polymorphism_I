@@ -11,6 +11,10 @@ public class App {
         pollObject(queen);
         pollObject(worker);
         pollObject(drone);
+
+        // Das sollte eigentlich nicht möglich sein!! //
+        HoneyBee bee = new HoneyBee();
+        pollObject(bee);
         
     }
 
@@ -23,7 +27,7 @@ public class App {
    
     private static void output(String outputStr) {
         System.out.println(outputStr);
-}
+    }
 
 
 
